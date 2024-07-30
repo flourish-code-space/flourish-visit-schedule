@@ -195,6 +195,8 @@ crf_2001 = FormsCollection(
     Crf(show_order=22, model='flourish_caregiver.parentadolrelationshipscale',
         required=False),
     Crf(show_order=23, model='flourish_caregiver.cliniciannotes', required=False),
+    Crf(show_order=24, model='flourish_caregiver.childhoodleadexposurerisk',
+        required=False),
     name='quarterly_calls')
 
 a_crf_3000 = FormsCollection(
@@ -233,10 +235,11 @@ a_crf_3000 = FormsCollection(
     Crf(show_order=22, model='flourish_caregiver.tbreferralcaregiver', required=False),
     Crf(show_order=23, model='flourish_caregiver.caregivertbreferraloutcome',
         required=False),
-    Crf(show_order=25, model='flourish_caregiver.hitsscreening'),
-    Crf(show_order=26, model='flourish_caregiver.briefdangerassessment', required=False),
-    Crf(show_order=27, model='flourish_caregiver.caregiversafistigma', ),
-    Crf(show_order=28, model='flourish_caregiver.caregivercageaid'),
+    Crf(show_order=24, model='flourish_caregiver.hitsscreening'),
+    Crf(show_order=25, model='flourish_caregiver.briefdangerassessment', required=False),
+    Crf(show_order=26, model='flourish_caregiver.caregiversafistigma', ),
+    Crf(show_order=27, model='flourish_caregiver.caregivercageaid'),
+    Crf(show_order=28, model='flourish_caregiver.childhoodleadexposurerisk'),
     name='a_follow_up')
 
 b_crf_3000 = FormsCollection(
@@ -344,7 +347,7 @@ tb_6_months = FormsCollection(
     Crf(show_order=5, model='flourish_caregiver.tbinterviewtranscription',
         required=False),
     Crf(show_order=6, model='flourish_caregiver.tbinterviewtranslation', required=False),
-    Crf(show_order=7, model='flourish_caregiver.cliniciannotes', required=True),
+    Crf(show_order=7, model='flourish_caregiver.cliniciannotes', required=False),
     name='tb_6_months')
 
 brain_ultrasound_visit = FormsCollection(
